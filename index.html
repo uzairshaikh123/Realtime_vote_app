@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Vote App</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+    <script src=""></script>
+</head>
+<body>
+
+    <div class="container">
+<h1>Live Vote App</h1>
+<h3 id="total">Total Votes :</h3>
+<div class="main">
+    <div id="left">
+        <div>
+            <h1>Party A</h1>
+            <h1 id="aparty">Vote Share : </h1>
+        </div>
+        <div>
+            <h1>Party B</h1>
+            <h1 id="bparty">Vote Share : 20</h1>
+        </div>
+        <div>
+            <h1>Party C</h1>
+            <h1 id="cparty">Vote Share : 20</h1>
+        </div>
+    </div>
+    <div id="right">
+        <h1>Vote Here</h1>
+        <div>
+            <form action="">
+                <label for="">Enter Voter Id No.</label>
+                <br>
+                <input id="voter_id" type="text" placeholder="enter your voter id card no">
+                <br>
+                <label for="">Select the Party</label>
+                <br>
+                <select id="party">
+                    <option value="A">Party A </option>
+                    <option value="B">Party B </option>
+                    <option value="C">Party C</option>
+                </select>
+                <br>
+                <button id="submit" type="submit">Vote</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
