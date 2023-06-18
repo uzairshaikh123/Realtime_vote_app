@@ -36,10 +36,10 @@ socket.on("allvotes",function (data){
     bvotes=Number(bvotes/total*100).toFixed(2)
     cvotes=Number(cvotes/total*100).toFixed(2)
 
-    document.querySelector("#aparty").innerText=`Vote Share : ${avotes} `
-    document.querySelector("#bparty").innerText=`Vote Share : ${bvotes} `
-    document.querySelector("#cparty").innerText=`Vote Share : ${cvotes} `
-    document.querySelector("#total").innerText=`Total Votes : ${total} `
+    document.querySelector("#aparty").innerText=`Vote Share : ${avotes}% `
+    document.querySelector("#bparty").innerText=`Vote Share : ${bvotes}%`
+    document.querySelector("#cparty").innerText=`Vote Share : ${cvotes}%`
+    document.querySelector("#total").innerText=`Total Votes : ${total}`
    
 
 
